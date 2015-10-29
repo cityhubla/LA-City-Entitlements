@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.11.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='css/style.css' rel='stylesheet' />
+    <script src='js/main.js'></script>
+</head>
+<body>
+
+<div id='map'></div>
+<div id='menubox'>
+    <div id='searchbox'>
+    <h3>cityhubLA | LA City Entitlements 2015</h3>    
+        <input type="text" placeholder="Address, Neighborhood or Zip" id="geosearch">
+        <input type="button" value="SEARCH" onclick="mapsearch()">
+        <p>This map explores the use of open source tools and open data to visualize entitlement applications submitted to the Los Angeles City Planning Department from January to October 2015. Data was collected through the City's <a href="http://parc3.lacity.org/ens/">Early Notification System.</a> Use of this map is for informational purposes. The condition of the data provided by this map is still being evaluated for its accuracy, reliability and errors. Map made with MapboxGL.js and QGIS by <a href="https://twitter.com/theworksla">Omar Ureta</a> <a href="https://github.com/cityhubla/LA-City-Entitlements">Follow it's development on Github!</a></p>
+    <div id='zonelist'>
+        Zoning Colors
+        <div id='res'>RESIDENTIAL</div><div id='com'>COMMERICAL</div><div id='manf'>MANUFACTURING</div></div>
+        <br>Entitlement Colors<br>
+        <div id='entdb' class="circle"></div> Density Bonus<br>
+        <div id='entzc' class="circle"></div> Zoning Change<br>
+        <div id='enteir' class="circle"></div> Environmential Impact Report<br>
+        <div id='entcex' class="circle"></div> Categorial Exemption<br>
+        <div id='entcoast' class="circle"></div> Coastal Exemption<br>
+        <div id='ent' class="circle"></div> Other
+       
+    </div>
+
+
+<div id='infobox'>Move your mouse over a circle and click to display application</div>
+</div>
+    
+</body>
+</html>

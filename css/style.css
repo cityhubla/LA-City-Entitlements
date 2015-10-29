@@ -1,0 +1,141 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+/* CSS Document */
+a:link {
+    color: #E86B3E;
+}
+a:visited {
+    color: #E86B3E;
+}
+a:hover {
+    color: #FFF;
+}
+a:active {
+    color: #FFF;
+}
+
+body { margin: 0; padding: 0;}
+#map { position:fixed; top:0; bottom:0; width:100%; height:100%}
+
+#menubox {
+        font-family: Sans-Serif;
+        display:block;
+        position: relative;
+        color: #FFF;
+        background: #333333;
+        width: 30%;
+        overflow:hidden;  
+}
+
+.circle {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+    display:inline-block;
+}
+
+#ent{
+background-color: #ff7f00;
+}
+
+#entcoast{
+background-color: aqua;
+}
+
+#entcex{
+background-color: black;
+}
+
+#enteir{
+background-color: #0076b1;
+}
+
+#entzc{
+background-color: #cf4fe3;
+}
+
+#entdb{
+background-color: #ffa4ff;
+}
+
+
+#zonelist{
+width:100%
+}
+
+#res{
+    display: block;
+    background-color: #b2d8f1;
+    padding: 3px;
+    width:50%
+}
+
+#com{
+    display: block;
+    background-color: #bac6cf;
+    padding: 3px;
+    width:50%
+}
+
+#manf{
+    display: block;
+    background-color: #aac9c7;
+    padding: 3px;
+    width:50%
+}
+
+#infobox {
+    padding: 10px 25px 25px;
+    background:#1C1C1C;
+    top:30%;
+}
+
+#searchbox {
+    padding: 10px 25px 25px;
+    display:block;
+    position:relative;
+}
+input[type=text] {
+    padding: 10px;
+    width:70%;
+    border: solid 5px #c9c9c9;
+    transition: border 0.3s;
+}
+input[type=button] {
+    width:20%;
+    color: white;
+    border: none;
+    padding: 15px;
+}
+
+
+@media (min-width:801px){
+#info {
+top:18px;
+left:20px;
+}
+}
+
+@media (max-width:800px) {   
+#map{height:50%;
+}  
+#menubox {
+    text-shadow:none;
+    top:50%;
+    bottom:0px;  
+	position: absolute;
+    padding: 0px;
+    width: 100%;
+    background: #333;
+    overflow:scroll;
+    }   
+
+ 
+    
+input[type=text] {
+    width:58%;
+}
+input[type=button] {
+    width:30%;
+}    
+}
