@@ -31,7 +31,7 @@ This map is developed using open source web tools like:
 Outcomes for this project 
 * Learn how to use mapboxgl and its features utilizing a cloud-based tileserver and tiles served by Mapbox. 
 * Study the entitlement process in land use development at the City of Los Angeles.
-* Develop and test various visualiztions of how best to convey development in the city.
+* Develop and test various visualizations of how best to convey development in the city.
 * Turn this into a tutorial for those interested in making their own maps on their own, with the amazing group called [Maptime!](wwww.maptime.io) and LA's very own chapter [maptimeLA!](https://twitter.com/MAPTIMELA)
 
 #Known Issues
