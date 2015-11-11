@@ -18,7 +18,7 @@ The PDFs contain the following categories:
 From these sources:
 
   * Los Angeles, CA (planning.lacity.org)
-  * Data in CSV and Excel format can be downloaded in the folder marked [Data](https://github.com/cityhubla/LA-City-Entitlements/tree/master/data)
+  * Data collected for 2015 (From 1/2015 to 10/2015) in CSV and Excel format can be downloaded in the folder marked [Data](https://github.com/cityhubla/LA-City-Entitlements/tree/master/data)
    * Note: Use of this data is for informational purposes. The condition of the data is still being evaluated for its accuracy, reliability and errors. Please attribute work to Omar Ureta.
 
 #Open Source Mapping Tools Used
