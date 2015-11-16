@@ -242,7 +242,7 @@ map.on('style.load', function () {
 map.on('click', function(e) {
       map.featuresAt(e.point, {radius: 5}, function(err, features) {
           map.setFilter('selection',[ 'all',[ 'in', 'Address' ].concat(features[0].properties.Address)]);
-          document.getElementById('infobox').innerHTML = "<b>Address: </b>"+features[0].properties.Address+"<br><b>Community Plan: </b>"+features[0].properties['Community Plan Area']+"<br><b>Request Type: </b>"+features[0].properties['Request Type']+"<br><b>Project Description: </b>"+features[0].properties['Project Description']
+          document.getElementById('infobox').innerHTML = "<b>Address: </b>"+features[0].properties.Address+"<br><b>Community Plan: </b>"+features[0].properties['Community Plan Area']+"<br><b>Request Type: </b>"+features[0].properties['Request Type']+"<br><b>Project Description: </b>"+features[0].properties['Project Description']+"<br><b><a href='http://planning.lacity.org/caseinfo/casesummary.aspx?case="+features[0].properties['Case Number']+"'  target='_blank'>Case Link to LA City Planning</a></b>"
       });
   });
 
@@ -262,7 +262,5 @@ mapboxgl.util.getJSON(addsearch, function(err, result) {
     });
 
 }
-
-//Disable Rotate
-map.dragRotate.disable();   
+ 
 });
