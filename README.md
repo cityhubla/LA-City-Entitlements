@@ -22,7 +22,7 @@ From these sources:
 
   * Los Angeles, CA (planning.lacity.org)
   * Data collected for 2015 (From 1/2015 to 10/2015) in CSV and Excel format can be downloaded in the folder marked [Data](https://github.com/cityhubla/LA-City-Entitlements/tree/master/data)
-   * Note: Use of this data is for informational purposes. The condition of the data is still being evaluated for its accuracy, reliability and errors. Please attribute work to Omar Ureta.
+   * Note: Use of this data is for informational purposes. The condition of the data is still being evaluated for its accuracy, reliability and errors. Please attribute work to [Omar Ureta](http://www.theworks.la).
 
 #Open Source Mapping Tools Used
 This map is developed using open source web tools like:
