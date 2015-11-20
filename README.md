@@ -41,6 +41,7 @@ Outcomes for this project
 
 #Known Issues
 * Many developments submit multiple requests for entitlements. The geocoded addresses resulted in overlapping markers of request types for the same development.
+* The colors are referencing entitlement requests from the "Request Type" field. This field is a generalized description and may not reflect all the requests a project is asking. For example a project's request type in the data may show a Zone Change, but the case number shows that it is also requesting a General Plan Amendment or Categorical Exemption.
 
 #Glossary
 *  **Entitlement** | Approval from a regulatory body to use or develop land ("Land Use, Zoning & Entitlement In Real Estate", Ploutus Advisors, [LINK](http://www.slideshare.net/adnantapia/land-use-zoning-entitlement-45244604)
