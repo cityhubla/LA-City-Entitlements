@@ -1,4 +1,7 @@
 # LA-City-Entitlements
+
+###Click here for working [map](http://cityhubla.github.io/LA-City-Entitlements/)
+
 Extracting Entitlements from PDFs sent by the [LA City Early Notification System](http://parc3.lacity.org/ens/).
 Method using Excel Macros to CSV for geocoding, (Still learning python)
 
