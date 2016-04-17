@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.17.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+<div id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiY3J1emluNzN2dyIsImEiOiI3RDdhUi1NIn0.jaEqREZw7QQMRafKPNBdmA';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/light-v8', //stylesheet location
+    center: [-118.243685,34.052234], // starting position
+    zoom: 11 // starting zoom
+});
+var canvas = map.getCanvasContainer();    
+map.on('load', function () {
+    map.addSource('2015_ent', {
+        type: 'vector',
+        url: 'mapbox://cruzin73vw.9i44wx2w'
+    });
+    map.addLayer({
+        "id": "2015_ent",
+        "type": "circle",
+        "source": "2015_ent",
+        "source-layer": "2015_ent",
+        "layout": {
+                "visibility": "visible"
+                },
+        "paint": {
+                "circle-radius": 6,
+                "circle-color": "hsl(116, 100%, 52%)",
+                "circle-opacity":.25
+                }
+    });
+    
+    //Filters by Case Number
+    
+});
+
+map.on('click',function(){
+    //console.log(e.point);
+    var features = map.queryRenderedFeatures([[0,900],[1920,0]], {
+    layers: ['2015_ent']
+    });
+    //console.log(canvas.getBoundingClientRect());
+    //console.log(features);
+    var features_1=features.filter(function(el){
+    //console.log(el.properties['Case Numbe'].indexOf("ZC")>=0);
+    return el.properties['Case Numbe'].indexOf("SPR")>=0;
+    });
+    //console.log(features_1);
+    
+    map.setFilter('2015_ent', ['in', 'Case Numbe'].concat(features_1.map(function(feature) {
+    return feature.properties['Case Numbe'];
+        })));
+});
+</script>
+
+</body>
+</html>
