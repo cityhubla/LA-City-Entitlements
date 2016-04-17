@@ -81,28 +81,28 @@ body { margin: 0; padding: 0;}
     display:inline-block;
 }
 
-#ent{
-background-color: #ff7f00;
-}
-
-#entcoast{
-background-color: aqua;
-}
-
-#entcex{
-background-color: black;
-}
-
-#enteir{
-background-color: #0076b1;
+#entgpa{
+background-color: #0037ff;
 }
 
 #entzc{
-background-color: #cf4fe3;
+background-color: #00ff0d;
+}
+
+#enthd{
+background-color: #fff;
 }
 
 #entdb{
-background-color: #ffa4ff;
+background-color: #fa0;
+}
+
+#entsl{
+background-color: #00c2a5;
+}
+
+#entspr{
+background-color: #f600ff;
 }
 
 
