@@ -20,20 +20,20 @@
 
 </script>    
 <body>
-<nav id="menu"></nav>
 <div id='map'></div>
 <div id='menubox'>
     <div id='searchbox'>
     <h3>LA City Entitlements Draft Map</h3>    
-        <p>This map explores the use of open source tools and open data to visualize entitlement applications submitted to the Los Angeles City Planning Department from 2013-2015. Data was collected through the City's <a href="http://parc3.lacity.org/ens/">Early Notification System.</a> Use of this map is for informational purposes. The condition of the data provided by this map is still being evaluated for its accuracy, reliability and errors. Map made with MapboxGL.js and QGIS by <a href="https://twitter.com/theworksla">Omar Ureta</a> <a href="https://github.com/cityhubla/LA-City-Entitlements">Follow it's development on Github!</a></p>
-
-        <br>Entitlement Colors<br>
-        <div id='entgpa' class="circle"></div> General Plan Amendment<br>
-        <div id='entzc' class="circle"></div> Zone Change<br>
-        <div id='enthd' class="circle"></div> Height District<br>
-        <div id='entdb' class="circle"></div> Density Bonus<br>
-        <div id='entsl' class="circle"></div> Small Lot<br>
-        <div id='entspr' class="circle"></div> Site Plan Review        
+        <p>This map explores the use of open source tools and open data to visualize entitlement applications submitted to the Los Angeles City Planning Department from 2013-2015. This map does not confirm whether the application has been approved or denied. Please visit the <a href="http://cityplanning.lacity.org/">LACity Planning Dept</a> for status. Data was collected through the City's <a href="http://parc3.lacity.org/ens/">Early Notification System.</a> Use of this map is for informational purposes. The condition of the data provided by this map is still being evaluated for its accuracy, reliability and errors. Map made with mapboxGL.js and QGIS by <a href="https://twitter.com/theworksla">Omar Ureta</a> <a href="https://github.com/cityhubla/LA-City-Entitlements">Follow it's development on Github!</a></p>
+<div id="menu">
+        <br><h3>Entitlement Legend</h3><br>
+        <div id='gpa' class="ent"></div><div id='entgpa' class="circle"></div><p> General Plan Amendment</p>
+        <div id='zc' class="ent"></div><div id='entzc' class="circle"></div><p> Zone Change</p>
+        <div id='hd' class="ent"></div><div id='enthd' class="circle"></div><p> Height District</p>
+        <div id='db' class="ent"></div><div id='entdb' class="circle"></div><p> Density Bonus</p>
+        <div id='sl' class="ent"></div><div id='entsl' class="circle"></div><p> Small Lot</p>
+        <div id='spr' class="ent"></div><div id='entspr' class="circle"></div><p> Site Plan Review</p>
+    </div>
     </div></div>
     
 </body>
